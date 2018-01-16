@@ -1,0 +1,63 @@
+/**
+ * Styles
+ */
+
+body {
+  padding: 60px;
+}
+
+.box {
+  display: inline-block;
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+  position: relative;
+
+  &.is-box-active {
+    animation: myFrames 2s ease-in-out 0s infinite alternate forwards;
+  }
+}
+
+@keyframes myFrames {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+// .text {
+//   display: inline-block;
+//   position: relative;
+//   font-size: 3em;
+//   font-weight: bold;
+//   color: #009966;
+
+//   &.is-text-active {
+//     animation: fall 4s infinite;
+//   }
+// }
+
+// @keyframes fall {
+//   0%, 15% {
+//     transform: rotate(0) translateX(0);
+//     opacity: 1;
+//     animation-timing-function: cubic-bezier(.07, 2.02, .67, .57);
+//   }
+//   50%,
+//   60% {
+//     transform: rotate(90deg) translateX(0);
+//     opacity: 1;
+//     animation-timing-function: cubic-bezier(.13, .84, .82, 1);
+//   }
+//   85%,
+//   100% {
+//     transform: rotate(90deg) translateX(200px);
+//     opacity: 0;
+//   }
+// }
+
+
